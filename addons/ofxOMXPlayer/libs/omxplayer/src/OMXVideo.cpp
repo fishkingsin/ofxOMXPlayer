@@ -871,7 +871,7 @@ void COMXVideo::WaitCompletion()
     //   ofLog(OF_LOG_VERBOSE, "%s::%s - wait for eos timed out\n", CLASSNAME, __func__);
     //   break;
     // }
-    OMXClock::OMXSleep(50);
+    OMXClock::OMXSleep(10);
   }
 
   return;

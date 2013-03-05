@@ -253,7 +253,7 @@ void ofxOMXPlayer::update()
 					m_player_audio.WaitCompletion();
 				}
 				videoPlayer.WaitCompletion();
-				if(omxReader.SeekTime(0 * 1000.0f, 0, &startpts))
+				if(omxReader.SeekTime(0 * 1000.0f, AVSEEK_FLAG_BACKWARD, &startpts))
 				{
 					videoPlayer.Flush();
 					if(hasAudio)

@@ -514,7 +514,7 @@ void OMXEGLImagePlayer::WaitCompletion()
 			break;
 		}
 		UnLock();
-		OMXClock::OMXSleep(50);
+		OMXClock::OMXSleep(10);
 	}
 
 	m_decoder->WaitCompletion();
